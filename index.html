@@ -22,7 +22,6 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -30,31 +29,33 @@
 
 <body class="index-page">
 
+  <!-- NAVIGATION BAR -->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" class="img-fluid rounded-circle object-fit-cover" style="width: 180px; height: 180px;">
+      <img src="assets/img/my-profile-img.jpg" class="img-fluid rounded-circle object-fit-cover"
+        style="width: 180px; height: 180px;">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Sơn Vũ</h1>
     </a>
 
+    <!-- social media -->
     <div class="social-links text-center">
       <a href="mailto:vuthienson280104@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
       <a href="https://github.com/sonvuuu28" class="github"><i class="bi bi-github"></i></a>
       <a href="https://www.linkedin.com/in/sonvuuu28/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-
     </div>
 
+    <!-- menu -->
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#project"><i class="bi bi-images navicon"></i> Project</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
+        <li><a href="#project"><i class="bi bi-images navicon"></i>Project</a></li>
+        <li><a href="#certification"><i class="bi bi-award navicon"></i>Certification</a></li>
       </ul>
     </nav>
 
@@ -62,19 +63,21 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
+    <!-- /HOME -->
     <section id="hero" class="hero section dark-background">
 
       <img src="assets/img/background.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Sơn Vũ</h2>
-        <p>I'm <span class="typed" data-typed-items="Data Engineer">Data Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Data Engineer">Data Engineer</span><span
+            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
+            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><!-- /HOME -->
 
-    <!-- Resume Section -->
+    <!-- /RESUME -->
     <section id="resume" class="resume section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
@@ -147,14 +150,17 @@
 
             <!-- Project 1 -->
             <div class="resume-item">
-              <h4>Real-time Recruitment Data Pipeline</h4> 
-              <a href="https://github.com/sonvuuu28/DE_2025_Recruitment_Pipeline_V2" title="More Details" class="details-link"><i class="bi bi-link-45deg">Github Repo Link</i></a>
+              <h4>Real-time Recruitment Data Pipeline</h4>
+              <a href="https://github.com/sonvuuu28/DE_2025_Recruitment_Pipeline_V2" title="More Details"
+                class="details-link"><i class="bi bi-link-45deg">Github Repo Link</i></a>
               <h5>Nov 2025 - Dec 2025</h5>
               <p><em>Kafka, Flink, MySQL, Grafana, Cassandra, Pyspark, Airflow</em></p>
               <ul>
                 <li>Built a data pipeline system ingesting recruitment website data via Kafka as the central hub.</li>
-                <li>Batch flow: stored raw Kafka data in Cassandra (Data Lake), processed with PySpark, and loaded curated data into MySQL DW using Airflow.</li>
-                <li>Real-time flow: processed Kafka streams with Apache Flink and pushed results to MySQL for live dashboards.</li>
+                <li>Batch flow: stored raw Kafka data in Cassandra (Data Lake), processed with PySpark, and loaded curated
+                  data into MySQL DW using Airflow.</li>
+                <li>Real-time flow: processed Kafka streams with Apache Flink and pushed results to MySQL for live
+                  dashboards.</li>
                 <li>Visualized system metrics and analytics using Grafana.</li>
                 <li>Fully containerized and deployed on a single VM using Docker.</li>
               </ul>
@@ -163,12 +169,14 @@
             <!-- Project 2 -->
             <div class="resume-item">
               <h4>Big Data ETL Pipeline for Customer 360 Analytics</h4>
-              <a href="https://github.com/sonvuuu28/DE_2025_BigData_Project" title="More Details" class="details-link"><i class="bi bi-link-45deg">Github Repo Link</i></a>
+              <a href="https://github.com/sonvuuu28/DE_2025_BigData_Project" title="More Details"
+                class="details-link"><i class="bi bi-link-45deg">Github Repo Link</i></a>
               <h5>Sep 2025 - Nov 2025</h5>
               <p><em>Pyspark, MySQL, Power BI, LM Studio</em></p>
               <ul>
                 <li>Developed ETL pipelines transforming OLTP data into OLAP outputs using Customer 360 framework.</li>
-                <li>Designed fact tables for activities & interactions and dimension tables for channels, applications, time, and customer attributes.</li>
+                <li>Designed fact tables for activities & interactions and dimension tables for channels, applications, time,
+                  and customer attributes.</li>
                 <li>Built batch and near real-time (mini-batch) data processing pipelines supporting BI dashboards.</li>
                 <li>Integrated a classification model to improve customer search input categorization.</li>
               </ul>
@@ -180,15 +188,12 @@
 
     </section>
 
-    <!-- /Resume Section -->
-
-    <!-- Project Section -->
+    <!-- /PROJECT -->
     <section id="project" class="portfolio section light-background">
 
-      <!-- Section Title -->
+      <!-- Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Project</h2>
-      </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -203,7 +208,8 @@
                   <h4>Project 1</h4>
                   <p>Real-time Recruitment Data Pipeline</p>
                   <a href="assets/img/project/1.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/sonvuuu28/DE_2025_Recruitment_Pipeline_V2" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://github.com/sonvuuu28/DE_2025_Recruitment_Pipeline_V2" title="More Details"
+                    class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Project Item -->
@@ -215,7 +221,8 @@
                   <h4>Project 2</h4>
                   <p>Big Data ETL Pipeline for Customer 360 Analytics</p>
                   <a href="assets/img/project/2.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/sonvuuu28/DE_2025_BigData_Project" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://github.com/sonvuuu28/DE_2025_BigData_Project" title="More Details"
+                    class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Project Item -->
@@ -226,25 +233,43 @@
 
       </div>
 
-    </section><!-- /Project Section -->
+    </section><!-- /PROJECT -->
 
+    <!-- /CERTIFICATION -->
+    <section id="certification" class="portfolio section light-background">
+
+      <!-- Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Certification</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/certification/toeic.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Toeic RL</h4>
+                  <p>Toeic Reading & Listening</p>
+                  <a href="assets/img/certification/toeic.jpg" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Certification Item -->
+
+          </div><!-- End Project Container -->
+        </div>
+      </div>
+    </section><!-- /CERTIFICATION -->
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -254,12 +279,9 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
